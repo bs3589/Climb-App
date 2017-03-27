@@ -9,12 +9,12 @@ var mongoose = require('mongoose');
 
 var usersController = require('./controllers/users.js');
 var sessionsController = require('./controllers/sessions.js');
-
+var climbsController = require('./controllers/climbs.js');
 // app variable, allows use of express methods
 var app = express();
 
 // ADD THE NAME OF YOUR DATABASE
-// mongoose.connect('mongodb://localhost/<YourDatabaseNameHere>');
+mongoose.connect('mongodb://localhost/climb-app');
 
 // app.set('view', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs')
@@ -33,13 +33,15 @@ app.use(session({
 
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
-
+app.use('/climbs', climbsController);
+// basic route
 app.get('/', function(req, res){
-  res.render('index.hbs');
+  res.render('index.hbs', {title: 'Climb App'});
 });
 
+// users route
 app.get('/users', function(req, res){
-  res.render('index.hbs');
+  res.render('');
 });
 
 var port = 4000;

@@ -10,6 +10,10 @@ var UserSchema = new Schema({
   updated_at: Date
 });
 
+var ClimbSchema = new Schema({
+	name: String
+})
+
 UserSchema.pre('save', function(next) {
   now = new Date();
   this.updated_at = now;
@@ -20,6 +24,9 @@ UserSchema.pre('save', function(next) {
 
 var UserModel = mongoose.model('User', UserSchema);
 
+var ClimbModel = mongoose.model('Climb', ClimbSchema);
+
 module.exports = {
-  User: UserModel
+  User: UserModel,
+  Climb: ClimbModel
 }

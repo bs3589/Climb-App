@@ -1,0 +1,23 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "This is boilerplate for your Express project, so there are several things you'll need to add, create and change before you're ready to start working on your project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "boilerplate",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "hbs": "^4.0.1",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.1",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {}
+}

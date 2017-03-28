@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
 var UserSchema = new Schema({
-  email: String,
+  email: String, // {unique:true}
   password_digest: String,
   created_at: Date,
   updated_at: Date

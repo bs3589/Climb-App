@@ -29,7 +29,10 @@ router.get('/new', function(req, res) {
 // create climb
 router.post('/', function(req, res) {
     var climb = new Climb({
-        name: req.body.name
+        name: req.body.name,
+        location: req.body.location,
+        grade: req.body.grade,
+        complete: req.body.complete
         
     });
     climb.save(function(err, climb){

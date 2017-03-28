@@ -12,9 +12,18 @@ var UserSchema = new Schema({
 
 var ClimbSchema = new Schema({
 	name: String,
+	location: String,
 	grade: String,
-	Complete: Boolean
-})
+	complete: Boolean
+});
+
+// ClimbSchema.pre('save', function(next) {
+//   now = new Date();
+//   this.updated_at = now;
+
+//   if (!this.created_at) { this.created_at = now; }
+//   next();
+// });
 
 UserSchema.pre('save', function(next) {
   now = new Date();
@@ -27,6 +36,10 @@ UserSchema.pre('save', function(next) {
 var UserModel = mongoose.model('User', UserSchema);
 
 var ClimbModel = mongoose.model('Climb', ClimbSchema);
+
+// ClimbSchema.virtual('fullName').get(function () {
+//     return this.name + ' ' + this.grade;
+// });
 
 module.exports = {
   User: UserModel,

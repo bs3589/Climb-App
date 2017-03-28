@@ -72,7 +72,10 @@ router.get('/:id/edit', function(req,res) {
 // update climb
 router.patch('/:id', function(req, res) {
     Climb.findByIdAndUpdate(req.params.id, {
-        name: req.body.name
+        name: req.body.name,
+        location: req.body.location,
+        grade: req.body.grade,
+        complete: req.body.complete
     }, {new: true})
         .exec(function(err, climb) {
             if (err) { console.log(err); }

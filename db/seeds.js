@@ -13,6 +13,7 @@ Climb.remove({}, function(err) {
 
 var dreamscape = new Climb({
 	name: 'Dreamscape'
+	location:
 });
 
 var climbingRoute2 = new Climb({

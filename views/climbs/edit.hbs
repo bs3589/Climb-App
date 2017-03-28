@@ -1,27 +1,28 @@
-<h1>Edit {{author.fullName}}</h1>
+<h1>Edit {{climb.fullName}}</h1>
 
 <div class="row">
-    <form action="/authors/{{author.id}}?_method=PATCH" method="POST" class="col-md-6 col-md-offset-3">
+    <form action="/climbs/{{climb.id}}?_method=PATCH" method="POST" class="col-md-6 col-md-offset-3">
+        <!-- Nmae -->
         <div class="form-group">
-            <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" value="{{author.first_name}}" class="form-control">
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="{{climb.name}}" class="form-control">
         </div>
+        <!-- Location -->
         <div class="form-group">
-            <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" value="{{author.last_name}}" class="form-control">
+            <label for="location">Location:</label>
+            <input type="text" name="location" value="{{climb.location}}" class="form-control">
         </div>
+        <!-- Garde -->
         <div class="form-group">
-            <label for="country">Country:</label>
-            <input type="text" name="country" value="{{author.country}}" class="form-control">
+            <label for="grade">Grade:</label>
+            <input type="text" name="grade" value="{{climb.grade}}" class="form-control">
         </div>
+        <!-- Complete -->
         <div class="form-group">
-            <label for="book_title">Book Title:</label>
-            <input type="text" name="book_title" value="{{author.book_title}}" class="form-control">
+            <label for="complete">Complete:</label>
+            <input type="text" name="complete" value="{{climb.complete}}" class="form-control">
         </div>
-        <div class="form-group">
-            <label for="publication_year">Publication Year:</label>
-            <input type="text" name="publication_year" value="{{author.publication_year}}" class="form-control">
-        </div>
+        <!-- Submit Button -->
         <div>
             <input type="submit" value="Submit" class="btn btn-primary">
         </div>
@@ -29,6 +30,6 @@
 </div>
 
 <div>
-    <a href="/authors/{{author.id}}" class="btn btn-default">Back</a>
-    <a href="/authors" class="btn btn-default">Main Page</a>
+    <a href="/climbs/{{climb.id}}" class="btn btn-default">Back</a>
+    <a href="/climbs" class="btn btn-default">Main Page</a>
 </div>

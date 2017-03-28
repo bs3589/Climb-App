@@ -11,8 +11,9 @@ var UserSchema = new Schema({
 });
 
 var ClimbSchema = new Schema({
-	name: String
-	
+	name: String,
+	grade: String,
+	Complete: Boolean
 })
 
 UserSchema.pre('save', function(next) {

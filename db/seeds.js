@@ -15,6 +15,20 @@ var dreamscape = new Climb({
 	name: 'Dreamscape'
 });
 
+var climbingRoute2 = new Climb({
+	name: 'climbingRoute2'
+});
+
+var climbingRoute3 = new Climb({
+	name: 'climbingRoute3'
+});
+
+var climbingRoute4 = new Climb({
+	name: 'climbingRoute4'
+});
+
+
+
 
 
 // saves

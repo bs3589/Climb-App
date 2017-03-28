@@ -12,6 +12,7 @@ var UserSchema = new Schema({
 
 var ClimbSchema = new Schema({
 	name: String
+	
 })
 
 UserSchema.pre('save', function(next) {

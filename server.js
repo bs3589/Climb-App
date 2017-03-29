@@ -14,7 +14,8 @@ var climbsController = require('./controllers/climbs.js');
 var app = express();
 
 // ADD THE NAME OF YOUR DATABASE
-mongoose.connect('mongodb://localhost/climb-app');
+// mongoose.connect('mongodb://localhost/climb-app');
+mongoose.connect('mongodb://localhost/Climbly');
 
 // app.set('view', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs')

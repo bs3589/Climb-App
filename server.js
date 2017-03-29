@@ -5,6 +5,7 @@ var methodOverride = require('method-override');
 var logger = require('morgan');
 var hbs = require('hbs')
 var mongoose = require('mongoose');
+require('dotenv').config();
 
 var homeController = require('./controllers/home.js')
 var usersController = require('./controllers/users.js');
@@ -13,9 +14,10 @@ var climbsController = require('./controllers/climbs.js');
 // app variable, allows use of express methods
 var app = express();
 
-// ADD THE NAME OF YOUR DATABASE
-// mongoose.connect('mongodb://localhost/climb-app');
-mongoose.connect('mongodb://localhost/Climbly');
+
+// CONNECT TO DB
+mongoose.connect(process.env.MONGODB_URI)
+
 
 // app.set('view', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs')

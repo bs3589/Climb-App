@@ -1,32 +1,44 @@
-<h1>Create a New Climb</h1>
+<div class="container">
+    <h1>Create a New Climb</h1>
 
-<div class="row">
-    <form action="/climbs" method="POST" class="col-md-6 col-md-offset-3">
-        <!-- Name -->
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" name="name" class="form-control">
-        </div>
-        <!-- Location -->
-        <div class="form-group">
-            <label for="location">Location:</label>
-            <input type="text" name="location" class="form-control">
-        </div>
-        <!-- Grade -->
-        <div class="form-group">
-            <label for="grade">Grade:</label>
-            <input type="text" name="grade" class="form-control">
-        </div>
-        <!-- Complete -->
-        <div class="form-group">
-            <label for="complete">Complete:</label>
-            <input type="text" name="complete" class="form-control">
-        </div>
-        <!-- Submit Button -->
-        <div>
-            <input type="submit" value="Submit" class="btn btn-primary">
-        </div>
-    </form>
+    <div class="row">
+        <form action="/climbs" method="POST" class="col-md-6 col-md-offset-3">
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" name="location" class="form-control">
+            </div>
+            <!-- Grade -->
+            <div class="form-group">
+                <label for="grade">Grade:</label>
+                <input type="text" name="grade" class="form-control">
+            </div>
+            <!-- Complete -->
+            <div class="form-group">
+                <label for="complete">Complete:</label>
+                <input type="text" name="complete" class="form-control">
+            </div>
+            <!-- Category -->
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <input type="text" name="category" class="form-control">
+            </div>
+            <!-- Description -->
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" name="description" class="form-control">
+            </div>
+            <!-- Submit Button -->
+            <div>
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+    <br/>
+    <a href="/climbs" class="btn btn-default">Main Page</a>
 </div>
-
-<a href="/climbs" class="btn btn-default">Main Page</a>

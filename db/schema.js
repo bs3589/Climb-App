@@ -9,6 +9,8 @@ var ClimbSchema = new Schema({
 	location: String,
 	grade: String,
 	complete: Boolean,
+  description: String,
+  category: String,
 	created_at: Date,
 	updated_at: Date
 });

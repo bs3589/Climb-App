@@ -6,7 +6,7 @@ var logger = require('morgan');
 var hbs = require('hbs')
 var mongoose = require('mongoose');
 
-
+var homeController = require('./controllers/home.js')
 var usersController = require('./controllers/users.js');
 var sessionsController = require('./controllers/sessions.js');
 var climbsController = require('./controllers/climbs.js');
@@ -30,19 +30,15 @@ app.use(session({
   saveUninitialized: false
 }));
 
-
+app.use('/', homeController);
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
 app.use('/climbs', climbsController);
-// basic route
-app.get('/', function(req, res){
-  res.render('index.hbs', {title: 'Climb App'});
-});
 
-// users route
-app.get('/users', function(req, res){
-  res.render('');
-});
+// // users route
+// app.get('/users', function(req, res){
+//   res.render('');
+// });
 
 var port = 4000;
 

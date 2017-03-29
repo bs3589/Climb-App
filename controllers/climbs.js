@@ -14,7 +14,7 @@ router.get('/', function(req, res) {
             console.log(climbs);
             // res.send(climbs);
             res.render('climbs/index', {
-                  climbs: climbs
+                climbs: climbs
             });
         });
 });
@@ -32,6 +32,8 @@ router.post('/', function(req, res) {
         name: req.body.name,
         location: req.body.location,
         grade: req.body.grade,
+        category: req.body.category,
+        description: req.body.description,
         complete: req.body.complete
         
     });
@@ -78,6 +80,8 @@ router.patch('/:id', function(req, res) {
         name: req.body.name,
         location: req.body.location,
         grade: req.body.grade,
+        category: req.body.category,
+        description: req.body.description,
         complete: req.body.complete
     }, {new: true})
         .exec(function(err, climb) {

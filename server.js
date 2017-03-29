@@ -43,7 +43,7 @@ app.use('/climbs', climbsController);
 //   res.render('');
 // });
 
-var port = 4000;
+var port = process.env.PORT || 4000;
 
 app.listen(port, function(err, res){
 	if(err){

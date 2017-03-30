@@ -2,10 +2,13 @@ GA ATL-WD9 Project 2 README
 
 
 ***link to Project on github***
+
 https://bs3589.github.io/Climb-App/.
 
 ***link to Project on heroku***
+
 https://fierce-river-35093.herokuapp.com/
+
 
 ***Wire Frames***
 ```
@@ -16,8 +19,10 @@ https://mail.google.com/mail/u/0/?ui=2&ik=b2986404d4&view=fimg&th=15b20e2717dc1f
 ```
 
 ***Trello***
+
 https://trello.com/b/LurdW9S4/wdi-project-2
 
 
 ***Link to Portfolio***
+
 file:///Users/bs3589/ga/portfolio_site/index.html#contact

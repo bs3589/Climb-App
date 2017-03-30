@@ -3,25 +3,24 @@
 
 **link to Project on github**
 
-https://bs3589.github.io/Climb-App/.
+[Git Hub](https://bs3589.github.io/Climb-App/.)
 
 **link to Project on heroku**
 
-https://fierce-river-35093.herokuapp.com/
+[Heroku](https://fierce-river-35093.herokuapp.com/)
 
 
 **Wire Frames**
 
-```
-https://mail.google.com/mail/u/0/?ui=2&ik=b2986404d4&view=fimg&th=15b20e2717dc1f7d&attid=0.2&disp=inline&safe=1&attbid=ANGjdJ8tjT6Vihe9nCNgGrIYtHjpTrx1Jd-bvBgQ0L9ZCXdbytn6icHo8SF7OwJKkWLOU42lSyLcG20WGd4IAeB1qTitGxT7Ky3NyXFXr0DtaOkM6rrwb2ZyTaehZYQ&ats=1490905414874&rm=15b20e2717dc1f7d&zw&sz=w1208-h706
-```
-```
-https://mail.google.com/mail/u/0/?ui=2&ik=b2986404d4&view=fimg&th=15b20e2717dc1f7d&attid=0.0&disp=inline&safe=1&attbid=ANGjdJ_SBcW1HKgfRGRjaa4XddBXDwLqk_BcfPfTvAHdQ4-buh7_OQA2RNeEdm1oQMDwnaNT6G_sKecWdQWFSpH90hEuktmptzEXs7Ptv_kEd66ECLqg7pcWib-TQmc&ats=1490905414874&rm=15b20e2717dc1f7d&zw&sz=w1208-h706
-```
+
+![wire-frame-1](http://i.imgur.com/jcV9m6w.jpg)
+
+![wire-frame-2](http://i.imgur.com/Fkoe7MT.jpg)
+
 
 **Trello**
 
-https://trello.com/b/LurdW9S4/wdi-project-2
+[Trello](https://trello.com/b/LurdW9S4/wdi-project-2)
 
 
 **Link to Portfolio**

@@ -5,9 +5,9 @@
 
 [Git Hub](https://bs3589.github.io/Climb-App/.)
 
-**link to Project on heroku**
+**Link to Project on [Heroku](https://fierce-river-35093.herokuapp.com/)
 
-[Heroku](https://fierce-river-35093.herokuapp.com/)
+
 
 
 **Wire Frames**
@@ -25,4 +25,4 @@
 
 **Link to Portfolio**
 
-file:///Users/bs3589/ga/portfolio_site/index.html#contact
+[Portfolio](https://bs3589.github.io/Portfolio/)
